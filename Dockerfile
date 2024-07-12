@@ -13,4 +13,5 @@ COPY . /app/
 RUN rye sync
 
 EXPOSE 8000
+RUN rye run manage migrate
 CMD [ "rye", "run", "server"]
