@@ -29,3 +29,8 @@ manage = { cmd = "python manage.py " }
 rye add dj-database-url python-dotenv
 ```
 
+- conf/settings.py
+
+```bash
+rye add django-bootstrap5
+```

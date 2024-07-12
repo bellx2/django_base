@@ -1,3 +1,4 @@
 # django-base
 
-Describe your project here.
+django base project
+

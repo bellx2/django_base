@@ -1,2 +1,9 @@
-<h1>app</h1>
-<p>仮のトップページ</p>
+{% extends 'app/base.html' %}
+{% block content %}
+  <h1>app</h1>
+  <p>仮のトップページ</p>
+  <button type="button" class="btn btn-primary">テストボタン</button>
+  <button type="button" class="btn btn-primary">
+    Notifications <span class="badge text-bg-secondary">4</span>
+  </button>
+{% endblock content %}

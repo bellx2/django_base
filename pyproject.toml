@@ -9,6 +9,7 @@ dependencies = [
     "django>=5.0.7",
     "dj-database-url>=2.2.0",
     "python-dotenv>=1.0.1",
+    "django-bootstrap5>=24.2",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
