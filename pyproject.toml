@@ -24,3 +24,7 @@ allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/django_base"]
+
+[tool.rye.scripts]
+server = { cmd = "python manage.py runserver" }
+manage = { cmd = "python manage.py " }
