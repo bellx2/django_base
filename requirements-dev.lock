@@ -12,7 +12,14 @@
 -e file:.
 asgiref==3.8.1
     # via django
+dj-database-url==2.2.0
+    # via django-base
 django==5.0.7
+    # via dj-database-url
+    # via django-base
+python-dotenv==1.0.1
     # via django-base
 sqlparse==0.5.0
     # via django
+typing-extensions==4.12.2
+    # via dj-database-url

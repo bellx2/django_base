@@ -19,10 +19,13 @@ rye run python manage.py runserver
 
 ## pyproject.toml
 
-```toml
+```yaml
 [tool.rye.scripts]
 server = { cmd = "python manage.py runserver" }
 manage = { cmd = "python manage.py " }
 ```
 
-## appの追加
+```bash
+rye add dj-database-url python-dotenv
+```
+
