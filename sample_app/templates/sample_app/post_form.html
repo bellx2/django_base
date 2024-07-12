@@ -1,0 +1,26 @@
+{% extends 'app/base.html' %}
+{% block content %}
+    <h4>Post の編集</h4>
+    {% if post_id %}
+    <form action="{% url 'sample_app:edit_post' post_id=post_id %}" method="post">
+    {% else %}
+    <form action="{% url 'sample_app:create_post' %}" method="post">
+    {% endif %}
+        {% csrf_token %}
+        {% for field in form %}
+            <div class="form-group">
+                <label class="control-label" for="{{ field.name }}">{{ field.label }}</label>
+                <div class="form-control">
+                <input type="" class="form-control"
+                        name="{{ field.name }}"
+                        id="{{ field.name }}"
+                        value="{{ field.value }}"
+                        {% if field.required %}required{% endif %}
+                >
+                </div>
+            </div>
+        {% endfor %}
+        <p></p>
+        <button type="submit" class="btn btn-primary">送信</button>
+    </form>
+{% endblock content %}
