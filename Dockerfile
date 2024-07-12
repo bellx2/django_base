@@ -14,4 +14,4 @@ RUN rye sync
 
 EXPOSE 8000
 RUN rye run manage migrate
-CMD [ "rye", "run", "server"]
+CMD [ "rye", "run", "server", "0.0.0.0:8000"]
